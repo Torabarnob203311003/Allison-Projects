@@ -1,63 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Innovat Architecture HTML Template</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
+    <!-- fontawesome 6.4.2 -->
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome-6.css">
+    <!-- swiper Css 10.2.0 -->
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <!-- Bootstrap 5.0.2 -->
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!-- metismenu scss -->
+    <link rel="stylesheet" href="assets/css/vendor/metismenu.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-     <h1>hi Alison</h1>
 
-     <main class="container">
-       <section class="demo">
-         <h2>Contact Form — Demo 1 (Basic)</h2>
-         <form id="contact-basic" class="form">
-           <label>
-             Name
-             <input type="text" name="name" required>
-           </label>
-           <label>
-             Email
-             <input type="email" name="email" required>
-           </label>
-           <label>
-             Message
-             <textarea name="message" rows="4" required></textarea>
-           </label>
-           <button type="submit">Send</button>
-           <p class="status" aria-live="polite"></p>
-         </form>
-       </section>
+<body class="onepage">
 
-       <section class="demo">
-         <h2>Contact Form — Demo 2 (Async)</h2>
-         <form id="contact-async" class="form" novalidate>
-           <label>
-             Name
-             <input type="text" name="name" required>
-           </label>
-           <label>
-             Email
-             <input type="email" name="email" required>
-           </label>
-           <label>
-             Subject
-             <input type="text" name="subject">
-           </label>
-           <label>
-             Message
-             <textarea name="message" rows="4" required></textarea>
-           </label>
-           <div class="row">
-             <button type="submit">Send Async</button>
-             <button type="reset">Reset</button>
-           </div>
-           <p class="status" aria-live="polite"></p>
-         </form>
-       </section>
-     </main>
+  <!-- include fragments (loader will fetch these files from /sections/) -->
+  <div data-include="sections/header.html"></div>
+  <div data-include="sections/banner.html"></div>
+  <div data-include="sections/about.html"></div>
+  <div data-include="sections/service.html"></div>
+  <div data-include="sections/work-process.html"></div>
+  <div data-include="sections/project.html"></div>
+  <div data-include="sections/counter.html"></div>
+  <div data-include="sections/brand.html"></div>
+  <div data-include="sections/team.html"></div>
+  <div data-include="sections/testimonials.html"></div>
+  <div data-include="sections/blog.html"></div>
+  <div data-include="sections/contact.html"></div>
+  <div data-include="sections/footer.html"></div>
 
-     <script src="index.js"></script>
+  <!-- small UI pieces -->
+  <div data-include="sections/search.html"></div>
+  <div data-include="sections/back-to-top.html"></div>
+  <div data-include="sections/sidebar.html"></div>
+  <div data-include="sections/grid-line.html"></div>
+  <div id="anywhere-home"></div>
+
+  <!-- loader for fragments -->
+  <script src="sections-loader.js"></script>
+
+  <!-- existing scripts (keep as before) -->
+  <script src="assets/js/vendor/jquery.min.js"></script>
+  <script src="assets/js/vendor/waw.js"></script>
+
+    <!-- gsap plugins -->
+    <script src="assets/js/vendor/gsap.js"></script>
+    <script src="assets/js/vendor/metismenu.js"></script>
+    <script src="assets/js/plugins/scrolltiger.js"></script>
+    <script src="assets/js/plugins/scrolltoplugin.js"></script>
+    <!-- <script src="assets/js/plugins/smoothscroll.js"></script> -->
+    <script src="assets/js/plugins/splittext.js"></script>
+    <!-- gsap plugins end-->
+
+    <script src="assets/js/vendor/magnifying-popup.js"></script>
+
+    <!-- swiper JS 10.2.0 -->
+    <script src="assets/js/plugins/swiper.js"></script>
+    <script src="assets/js/plugins/counterup.js"></script>
+    <script src="assets/js/vendor/waypoint.js"></script>
+    <script src="assets/js/vendor/chroma.min.js"></script>
+    <!-- bootstrap 5.0.2 -->
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <!-- dymanic Contact Form -->
+    <script src="assets/js/plugins/contact.form.js"></script>
+
+    <!-- main Js -->
+    <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>

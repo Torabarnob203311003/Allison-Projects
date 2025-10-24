@@ -76,3 +76,16 @@ button[type="reset"]{
 }
 .status.success{color:green}
 .status.error{color:#b91c1c}
+
+/* Override: remove numeric prefixes from navbar items (01 / 02 / 03 ...) */
+.rts-header-style-one .navigation li::before,
+.rts-header-style-one .navigation .parent-ul li::before,
+.navigation li::before,
+.navigation .parent-ul li::before,
+.rts-header-style-one .navigation li > a::before {
+  content: none !important;
+  display: none !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
