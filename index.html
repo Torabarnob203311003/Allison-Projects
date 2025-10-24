@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h1>hi Alison</h1>
+
+     <main class="container">
+       <section class="demo">
+         <h2>Contact Form — Demo 1 (Basic)</h2>
+         <form id="contact-basic" class="form">
+           <label>
+             Name
+             <input type="text" name="name" required>
+           </label>
+           <label>
+             Email
+             <input type="email" name="email" required>
+           </label>
+           <label>
+             Message
+             <textarea name="message" rows="4" required></textarea>
+           </label>
+           <button type="submit">Send</button>
+           <p class="status" aria-live="polite"></p>
+         </form>
+       </section>
+
+       <section class="demo">
+         <h2>Contact Form — Demo 2 (Async)</h2>
+         <form id="contact-async" class="form" novalidate>
+           <label>
+             Name
+             <input type="text" name="name" required>
+           </label>
+           <label>
+             Email
+             <input type="email" name="email" required>
+           </label>
+           <label>
+             Subject
+             <input type="text" name="subject">
+           </label>
+           <label>
+             Message
+             <textarea name="message" rows="4" required></textarea>
+           </label>
+           <div class="row">
+             <button type="submit">Send Async</button>
+             <button type="reset">Reset</button>
+           </div>
+           <p class="status" aria-live="polite"></p>
+         </form>
+       </section>
+     </main>
+
+     <script src="index.js"></script>
+</body>
+</html>
